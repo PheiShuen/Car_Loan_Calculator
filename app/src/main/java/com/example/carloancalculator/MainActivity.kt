@@ -31,7 +31,13 @@ class MainActivity : AppCompatActivity() {
         textViewMonthlyPayment.text = getString(R.string.monthly_payment)+": ${mPayment}"
     }
     fun resetInput(view: View){
-
+        editTextCarPrice.text.clear()
+        editTextDownPayment.text.clear()
+        editTextInterestRate.text.clear()
+        editTextLoanPeriod.text.clear()
+        textViewCarLoan.text = String.format("%s",getString(R.string.car_loan))
+        textViewInterest.text = String.format("%s",getString(R.string.interest))
+        textViewMonthlyPayment.text = String.format("%s",getString(R.string.monthly_payment))
 
     }
 }
